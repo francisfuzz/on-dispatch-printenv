@@ -22,3 +22,18 @@ jobs:
       # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstepsrun
       run: |
         printenv
+
+    - name: Alpha
+      env:
+        dog_name: Fido
+      run: |
+        echo $dog_name
+        printenv
+        
+    - name: Beta
+      env:
+        elephant_name: Chester
+      run: |
+        echo $dog_name
+        echo $elephant_name
+        printenv
