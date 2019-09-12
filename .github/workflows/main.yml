@@ -25,6 +25,6 @@ jobs:
 
     - name: Update PATH environment variable and printenv again
       env:
-        PATH: $HOME/.cargo/bin:$PATH
+        PATH: ${{ $HOME/.cargo/bin:$PATH }}
       run: |
         printenv
