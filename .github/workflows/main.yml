@@ -23,17 +23,8 @@ jobs:
       run: |
         printenv
 
-    - name: Alpha
+    - name: Update PATH environment variable and printenv again
       env:
-        dog_name: Fido
+        PATH: $HOME/.cargo/bin:$PATH
       run: |
-        echo $dog_name
-        printenv
-        
-    - name: Beta
-      env:
-        elephant_name: Chester
-      run: |
-        echo $dog_name
-        echo $elephant_name
         printenv
